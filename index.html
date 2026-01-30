@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basith Marecar - CV</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+    /* ================= BASE ================= */
+
+    body {
+      background: #cfd8e3;
+      scroll-behavior: smooth;
+      font-family: 'Inter', sans-serif;
+      color: #0f172a;
+      padding-top: 90px;
+    }
+
+    section {
+      padding: 90px 0;
+    }
+
+    /* ================= CONTAINERS ================= */
+
+    .content-box {
+      background: #dde4ec;
+      border-radius: 22px;
+      padding: 45px 35px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      border: 1px solid rgba(15,23,42,0.08);
+    }
+
+    .section-gray {
+      background: #cfd8e3;
+    }
+
+    /* ================= NAVBAR ================= */
+
+    .navbar {
+      background: transparent !important;
+      padding: 16px 0;
+    }
+
+    .navbar .container-xl {
+      max-width: 1150px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, #0d6efd, #083ea8);
+      border-radius: 16px;
+      padding: 12px 32px;
+      box-shadow: 0 8px 25px rgba(13,110,253,0.5);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .navbar .nav-link,
+    .navbar .navbar-brand {
+      color: #ffffff !important;
+      font-size: 0.95rem;
+      padding: 6px 12px;
+    }
+
+    .navbar .nav-link {
+      position: relative;
+      transition: all 0.25s ease;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .navbar .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0;
+      height: 2px;
+      background: #ffffff;
+      transition: 0.3s;
+    }
+
+    .navbar .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .nav-link:hover {
+      color: #dbe9ff !important;
+      transform: scale(1.1);
+    }
+
+    .lang-btn {
+      cursor: pointer;
+      margin-left: 12px;
+      font-size: 1.1rem;
+      transition: transform 0.2s;
+    }
+
+    .lang-btn:hover {
+      transform: scale(1.2);
+    }
+
+    /* ================= CARDS ================= */
+
+    .card {
+      border: none;
+      border-radius: 18px;
+      background: #e3e9f0;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      transition: all 0.3s ease;
+      border-left: 4px solid #0d6efd;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 14px 32px rgba(13,110,253,0.25);
+    }
+
+    /* ================= TITRES ================= */
+
+    h1, h2 {
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #020617;
+    }
+
+    h2::before {
+      content: '> ';
+      color: #0d6efd;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* ================= BOUTONS ================= */
+
+    .btn-primary {
+      background: linear-gradient(135deg, #0d6efd, #083ea8);
+      border: none;
+      padding: 11px 26px;
+      border-radius: 25px;
+      box-shadow: 0 5px 15px rgba(13,110,253,0.5);
+      transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 8px 22px rgba(13,110,253,0.7);
+    }
+
+    /* ================= ACCORDION ================= */
+
+    .accordion-button {
+      font-family: 'JetBrains Mono', monospace;
+      background: #e3e9f0;
+      color: #020617;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background: #d6e0ff;
+      color: #0d6efd;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      background: #d5dde6;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      color: #020617;
+    }
+
+    p, li {
+      color: #1e293b;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-xl">
+
+    <a class="navbar-brand fw-bold" href="#" data-fr="Basith Marecar" data-en="Basith Marecar">Basith Marecar</a>
+
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      ☰
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <li class="nav-item"><a class="nav-link" href="#home" data-fr="Accueil" data-en="Home">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" data-fr="À propos" data-en="About">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills" data-fr="Compétences" data-en="Skills">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience" data-fr="Expérience" data-en="Experience">Expérience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+
+      </ul>
+
+      <div class="ms-3 text-white">
+        <span class="lang-btn" onclick="setLang('fr')">🇫🇷</span>
+        <span class="lang-btn" onclick="setLang('en')">🇬🇧</span>
+      </div>
+
+    </div>
+
+  </div>
+</nav>
+
+<!-- HOME -->
+
+<section id="home">
+  <div class="container" data-aos="fade-up">
+    <div class="content-box text-center">
+
+      <h1 data-fr="Basith Marecar" data-en="Basith Marecar">Basith Marecar</h1>
+
+      <p class="lead"
+         data-fr="Technicien Systèmes et Réseaux"
+         data-en="Systems & Network Technician">
+        Technicien Systèmes et Réseaux
+      </p>
+
+      <a href="#contact" class="btn btn-primary mt-3"
+         data-fr="Me contacter"
+         data-en="Contact me">
+        Me contacter
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="section-gray">
+  <div class="container" data-aos="fade-right">
+    <div class="content-box text-center">
+
+      <h2 data-fr="À propos" data-en="About">À propos</h2>
+
+      <p class="mt-3"
+         data-fr="Technicien passionné par les systèmes, réseaux, cybersécurité et IoT. Sérieux, autonome et motivé."
+         data-en="Technician passionate about systems, networks, cybersecurity and IoT. Serious, autonomous and motivated.">
+        Technicien passionné par les systèmes, réseaux, cybersécurité et IoT. Sérieux, autonome et motivé.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+  <div class="container" data-aos="fade-up">
+    <div class="content-box">
+
+      <h2 class="text-center mb-5" data-fr="Compétences" data-en="Skills">Compétences</h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card p-4 text-center">
+            <h5 data-fr="Réseaux" data-en="Networks">Réseaux</h5>
+            <p>LAN, VLAN, DNS, Firewall</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card p-4 text-center">
+            <h5 data-fr="Systèmes" data-en="Systems">Systèmes</h5>
+            <p>Linux, Debian, Ubuntu</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card p-4 text-center">
+            <h5 data-fr="Programmation" data-en="Programming">Programmation</h5>
+            <p>Python, NodeJS, MySQL</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+  <div class="container" data-aos="fade-left">
+    <div class="content-box">
+
+      <h2 class="text-center mb-5" data-fr="Expériences" data-en="Experience">Expériences</h2>
+
+      <div class="accordion">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#exp1">
+              Projet IoT - 2025
+            </button>
+          </h2>
+          <div id="exp1" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              Middleware, API REST, MySQL, Zigbee, MQTT
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#exp2">
+              Stage METROBOX - 2024
+            </button>
+          </h2>
+          <div id="exp2" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Administration réseau, support, WordPress
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section-gray">
+  <div class="container" data-aos="zoom-in">
+    <div class="content-box text-center">
+
+      <h2 class="mb-4" data-fr="Contact" data-en="Contact">Contact</h2>
+
+      <p>📧 <a href="mailto:marecarbasith@gmail.com">marecarbasith@gmail.com</a></p>
+      <p>📞 07 68 26 32 93</p>
+      <p class="fw-bold" data-fr="Garges-lès-Gonesse" data-en="Garges-lès-Gonesse">📍 Garges-lès-Gonesse</p>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="text-center p-3">
+  © 2026 Basith Marecar
+</footer>
+
+<!-- SCRIPTS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+
+  AOS.init();
+
+  /* ================= LANG SYSTEM ================= */
+
+  function setLang(lang) {
+
+    document.querySelectorAll('[data-fr]').forEach(el => {
+
+      if (lang === 'fr') {
+        el.textContent = el.dataset.fr;
+      } else {
+        el.textContent = el.dataset.en;
+      }
+
+    });
+
+  }
+
+</script>
+
+</body>
+</html>
