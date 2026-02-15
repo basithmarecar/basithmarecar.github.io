@@ -4,156 +4,188 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Basith Marecar | Développeur Web & IoT</title>
+<title>Basith Marecar | Développeur Web & IoT - CV</title>
 
-<meta name="description" content="Basith Marecar - Développeur Web, IoT et Systèmes Embarqués en France. API REST, Raspberry Pi, React Native, MySQL, Réseaux.">
-<meta name="keywords" content="Basith Marecar, développeur web France, IoT, Raspberry Pi, API REST, React Native, MySQL, systèmes embarqués">
+<meta name="description" content="Basith Marecar, développeur web et IoT en France. Spécialisé en API REST, Raspberry Pi, React Native, MySQL et systèmes embarqués.">
+<meta name="keywords" content="Basith Marecar, développeur web France, IoT, Raspberry Pi, API REST, React Native, MySQL, BTS CIEL, portfolio développeur">
 <meta name="author" content="Basith Marecar">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
 
-body{
-    background:#cfd8e3;
+body {
+    background: linear-gradient(180deg, #cfd8e3, #e9eef4);
     font-family: 'Inter', sans-serif;
-    scroll-behavior:smooth;
+    padding-top: 100px;
+    color: #0f172a;
 }
 
 /* NAVBAR */
-.navbar-custom{
-    background:linear-gradient(135deg,#0d6efd,#083ea8);
-    border-radius:18px;
-    padding:15px 30px;
-    box-shadow:0 8px 25px rgba(13,110,253,0.4);
+
+.navbar-custom {
+    background: linear-gradient(135deg, #0d6efd, #083ea8);
+    border-radius: 16px;
+    padding: 12px 30px;
+    box-shadow: 0 8px 25px rgba(13,110,253,0.4);
 }
 
 .navbar-custom .nav-link,
-.navbar-custom .navbar-brand{
-    color:white!important;
-    font-weight:500;
+.navbar-custom .navbar-brand {
+    color: white !important;
+    font-weight: 500;
 }
 
 /* HERO */
-.hero-box{
-    background:#dde4ec;
-    border-radius:25px;
-    padding:60px 40px;
-    box-shadow:0 15px 35px rgba(0,0,0,0.12);
+
+.hero-box {
+    background: #dde4ec;
+    border-radius: 22px;
+    padding: 60px 40px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
 
-.keyword-badge{
-    background:white;
-    color:#0d6efd;
-    padding:8px 14px;
-    border-radius:20px;
-    font-size:0.85rem;
-    margin:5px;
-    display:inline-block;
-    font-weight:600;
+.available-badge {
+    background: #198754;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(25,135,84,0.4);
 }
 
-.btn-glow{
-    background:linear-gradient(135deg,#0d6efd,#083ea8);
-    border:none;
-    border-radius:30px;
-    padding:12px 28px;
-    color:white;
-    box-shadow:0 6px 18px rgba(13,110,253,0.5);
-    transition:0.3s;
-}
-
-.btn-glow:hover{
-    transform:translateY(-3px);
-    box-shadow:0 10px 25px rgba(13,110,253,0.7);
+.keyword-badge {
+    background: rgba(13,110,253,0.15);
+    color: #0d6efd;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin: 5px;
+    display: inline-block;
 }
 
 /* SECTIONS */
-.section-box{
-    background:#dde4ec;
-    border-radius:22px;
-    padding:50px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+.section-box {
+    background: #dde4ec;
+    border-radius: 22px;
+    padding: 50px 35px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    margin-bottom: 60px;
 }
 
-.section-title::before{
-    content:"> ";
-    color:#0d6efd;
-    font-weight:bold;
+h2::before {
+    content: "> ";
+    color: #0d6efd;
+    font-weight: bold;
 }
 
-.card{
-    background:#e3e9f0;
-    border:none;
-    border-radius:18px;
-    transition:0.3s;
+/* CARDS */
+
+.card-custom {
+    border: none;
+    border-radius: 18px;
+    background: #e3e9f0;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+    border-left: 4px solid #0d6efd;
 }
 
-.card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 12px 30px rgba(0,0,0,0.15);
+.card-custom:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 32px rgba(13,110,253,0.3);
 }
 
-footer{
-    background:#d5dde6;
+/* BUTTON */
+
+.btn-glow {
+    background: linear-gradient(135deg, #0d6efd, #083ea8);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 6px 20px rgba(13,110,253,0.5);
+    transition: 0.3s;
+}
+
+.btn-glow:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(13,110,253,0.7);
+}
+
+/* FOOTER */
+
+footer {
+    background: #d5dde6;
+    padding: 20px;
+    font-size: 0.9rem;
 }
 
 </style>
 </head>
-
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg mt-3">
-<div class="container">
-<div class="navbar-custom w-100 d-flex justify-content-between align-items-center">
+<nav class="navbar fixed-top">
+  <div class="container">
+    <div class="navbar-custom w-100 d-flex justify-content-between align-items-center">
 
-<a class="navbar-brand fw-bold" href="#">Basith Marecar</a>
+      <a class="navbar-brand fw-bold" href="#">Basith Marecar</a>
 
-<ul class="navbar-nav flex-row gap-3">
-<li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
-<li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
-<li class="nav-item"><a class="nav-link" href="#experience">Expérience</a></li>
-<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-</ul>
+      <div>
+        <a class="nav-link d-inline" href="#home">Accueil</a>
+        <a class="nav-link d-inline" href="#about">À propos</a>
+        <a class="nav-link d-inline" href="#skills">Compétences</a>
+        <a class="nav-link d-inline" href="#experience">Expérience</a>
+        <a class="nav-link d-inline" href="#contact">Contact</a>
+      </div>
 
-</div>
-</div>
+    </div>
+  </div>
 </nav>
 
 <!-- HERO -->
-<section class="py-5 text-center">
-<div class="container">
+<section id="home">
+<div class="container text-center">
 <div class="hero-box">
 
-<h1 class="fw-bold">Basith Marecar</h1>
-<p class="lead">Développeur Web • IoT • Systèmes Embarqués</p>
+<span class="available-badge">Disponible pour opportunités</span>
 
-<!-- MOTS CLÉS EN HAUT -->
-<div class="mt-3">
+<h1 class="fw-bold mb-3">Basith Marecar</h1>
+
+<p class="lead fw-semibold mb-4">
+Développeur Web • IoT • Systèmes & Réseaux
+</p>
+
+<div class="mb-4">
 <span class="keyword-badge">API REST</span>
 <span class="keyword-badge">Raspberry Pi</span>
 <span class="keyword-badge">React Native</span>
 <span class="keyword-badge">MySQL</span>
-<span class="keyword-badge">Cybersécurité</span>
-<span class="keyword-badge">Réseaux</span>
+<span class="keyword-badge">Zigbee</span>
+<span class="keyword-badge">BTS CIEL</span>
 </div>
 
-<a href="#contact" class="btn btn-glow mt-4">Me contacter</a>
+<a href="#contact" class="btn btn-glow">Me contacter</a>
 
 </div>
 </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="py-5 text-center">
+<section id="about">
 <div class="container">
-<div class="section-box">
+<div class="section-box text-center">
 
-<h2 class="section-title fw-bold">À propos</h2>
-<p class="mt-3">
-Développeur passionné par les systèmes, réseaux, cybersécurité et IoT.
-Autonome, sérieux et orienté solutions techniques modernes.
+<h2 class="mb-4">À propos</h2>
+
+<p>
+Développeur passionné par les systèmes embarqués, les réseaux et l'IoT.
+Expérience en développement d’API REST, gestion de bases de données MySQL,
+intégration Raspberry Pi et solutions connectées.
+Profil sérieux, autonome et orienté résultats.
 </p>
 
 </div>
@@ -161,59 +193,81 @@ Autonome, sérieux et orienté solutions techniques modernes.
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="py-5">
+<section id="skills">
 <div class="container">
 <div class="section-box">
 
-<h2 class="section-title fw-bold text-center mb-4">Compétences</h2>
+<h2 class="text-center mb-5">Compétences</h2>
 
 <div class="row g-4">
 
 <div class="col-md-4">
-<div class="card p-4 text-center">
+<div class="card card-custom p-4 text-center">
 <h5>Développement</h5>
-<p>Python, NodeJS, API REST</p>
+<p>Python, NodeJS, React Native</p>
 </div>
 </div>
 
 <div class="col-md-4">
-<div class="card p-4 text-center">
-<h5>Systèmes</h5>
-<p>Linux, Debian, Ubuntu</p>
+<div class="card card-custom p-4 text-center">
+<h5>Backend & API</h5>
+<p>Flask, REST API, MySQL</p>
 </div>
 </div>
 
 <div class="col-md-4">
-<div class="card p-4 text-center">
-<h5>Réseaux</h5>
-<p>LAN, VLAN, DNS, Firewall</p>
+<div class="card card-custom p-4 text-center">
+<h5>Systèmes & IoT</h5>
+<p>Raspberry Pi, Zigbee, MQTT</p>
 </div>
 </div>
 
 </div>
+
+</div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+<div class="container">
+<div class="section-box">
+
+<h2 class="text-center mb-5">Expérience</h2>
+
+<ul class="list-group list-group-flush">
+<li class="list-group-item bg-transparent">
+<strong>Projet IoT 2025 :</strong> Middleware, API REST, MySQL, capteurs Zigbee.
+</li>
+<li class="list-group-item bg-transparent">
+<strong>Stage 2024 :</strong> Administration réseau, support technique, WordPress.
+</li>
+</ul>
 
 </div>
 </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-5 text-center">
+<section id="contact">
 <div class="container">
-<div class="section-box">
+<div class="section-box text-center">
 
-<h2 class="section-title fw-bold">Contact</h2>
-<p class="mt-3">📧 marecarbasith@gmail.com</p>
+<h2 class="mb-4">Contact</h2>
+
+<p>📧 <a href="mailto:marecarbasith@gmail.com">marecarbasith@gmail.com</a></p>
 <p>📞 07 68 26 32 93</p>
-<p>📍 Garges-lès-Gonesse</p>
+<p class="fw-bold">📍 Garges-lès-Gonesse, France</p>
 
 </div>
 </div>
 </section>
 
-<footer class="text-center p-3">
+<footer class="text-center">
 © 2026 Basith Marecar
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
